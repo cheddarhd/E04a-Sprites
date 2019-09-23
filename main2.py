@@ -46,15 +46,24 @@ class MyGame(arcade.Window):
 
     def setup(self):
         self.animal_sprite = arcade.Sprite("assets/crocodile.png", 0.5)
-        self.animal_sprite.center_x = 400
+        self.animal_sprite.center_x = 475
         self.animal_sprite.center_y = 300
         self.animal_list.append(self.animal_sprite)
 
         self.emote_sprite = Emote()
-        self.emote_sprite.center_x = 400
+        self.emote_sprite.center_x = 455
         self.emote_sprite.center_y = 360
         self.emote_list.append(self.emote_sprite)
         
+        self.animal_sprite = arcade.Sprite("assets/frog.png", 0.5)
+        self.animal_sprite.center_x = 335
+        self.animal_sprite.center_y = 300
+        self.animal_list.append(self.animal_sprite)
+
+        self.emote_sprite = Emote()
+        self.emote_sprite.center_x = 355
+        self.emote_sprite.center_y = 360
+        self.emote_list.append(self.emote_sprite)
 
     def on_draw(self):
         arcade.start_render()
